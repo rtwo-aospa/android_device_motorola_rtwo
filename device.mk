@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
 
 # PowerShare
 PRODUCT_PACKAGES += \
-    vendor.lineage.powershare@1.0-service.rtwo
+    vendor.aospa.powershare-service
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -94,10 +94,6 @@ PRODUCT_COPY_FILES += \
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-rtwo-game-perf.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-rtwo.conf
-
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.rtwo
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)

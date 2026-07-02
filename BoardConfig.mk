@@ -25,6 +25,9 @@ ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_rtwo_dne.xml
 TARGET_KERNEL_CONFIG += \
 	vendor/ext_config/moto-kalama-rtwo.config
 
+# AOSPA PowerShare
+TARGET_POWERSHARE_NODE := /sys/class/power_supply/wireless/device/tx_mode
+
 # Partitions
 ifneq ($(WITH_GMS),true)
 BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 3318226944

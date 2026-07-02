@@ -22,8 +22,8 @@ ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/manifest_rtwo_dn.xml
 ODM_MANIFEST_DNE_FILES := $(DEVICE_PATH)/manifest_rtwo_dne.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG += \
-	vendor/ext_config/moto-kalama-rtwo.config
+KERNEL_FRAGMENT_CONFIG += \
+	arch/arm64/configs/vendor/ext_config/moto-kalama-rtwo.config
 
 # AOSPA PowerShare
 TARGET_POWERSHARE_NODE := /sys/class/power_supply/wireless/device/tx_mode

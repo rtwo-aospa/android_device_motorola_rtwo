@@ -4,6 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Signing
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aospa/security/releasekey
+PRODUCT_OTA_PUBLIC_KEYS := vendor/aospa/security/releasekey.x509.pem
+
 # ADB (force for development with test keys)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.adb.secure=0 \

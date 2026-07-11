@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rtwo.mk
+    $(LOCAL_DIR)/aospa_rtwo.mk
+
+COMMON_LUNCH_CHOICES := \
+    aospa_rtwo-user \
+    aospa_rtwo-userdebug \
+    aospa_rtwo-eng
